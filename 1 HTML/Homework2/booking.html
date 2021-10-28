@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Book Flight</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            width: 340px;
+            height: 180px;
+            border: 1px solid black;
+        }
+        section {
+            height: 30px;
+            width: 100%;
+            background-color: dimgray;
+        }
+        #search {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            margin-left: 2px;
+            margin-top: 7px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="origin">Flying from</label> <br>
+                        <select id="origin" name="origin">
+                            <option value="Karachi">Karachi, Pakistan</option>
+                            <option value="Chiangmai">Chiangmai, Thailand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="destination">To</label> <br>
+                        <select id="destination" name="destination">
+                            <option value="Islamabad">Islamabad, Pakistan</option>
+                            <option value="Chaingmai">Chiangmai, Thailand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="departing">Departing</label> <br>
+                        <input type="date" id="departing" name="departing">
+                    </td>
+                    <td>
+                        <label for="returning">Returning</label> <br>
+                        <input type="date" id="returning" name="returning">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="adult">Adult</label> <br>
+                        <input class="small_input" type="number" id="adult" name="adult" value="1" min="1" max="100">
+                    </td>
+                    <td>
+                        <label for="child">Child</label> <br>
+                        <input class="small_input" type="number" id="child" name="child" value="0" min="1" max="100">
+                    </td>
+                    <td>
+                        <label for="infant">Infant</label> <br>
+                        <input class="small_input" type="number" id="infant" name="infant" value="0" min="1" max="100">
+                    </td>
+                    <td>
+                        <label for="currency">Currency</label> <br>
+                        <select id="currency" name="currency">
+                            <option value="pkr">PKR</option>
+                            <option value="bht">BHT</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <section>
+                <input id="search" type="button" value="SEARCH">
+            </section>
+        </form>
+    </body>
+</html>
