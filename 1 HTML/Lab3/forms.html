@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="forms.html" method="post">
+        <TABLE BORDER="1">
+            <tr style="text-align: center;">
+                <td colspan="2"><strong> Pizza Shop2.0 </strong> </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input TYPE="TEXT" NAME="name" SIZE="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td>
+                    <input TYPE="radio" NAME="supreme" value="supreme">Supreme<br>
+                    <input type="radio" NAME="vegetarian" value="vegetarian">Vegetarian<br>
+                    <input type="radio" NAME="hawaiian" value="hawaiian">Hawaiian
+                </td>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td>
+                    <select name="optional_extra" id="extra">
+                        <option value="tomato_1">Tomato</option>
+                        <option value="tomato_2">Tomato2</option>
+                        <option value="tomato_3">Tomato3</option>
+                        <option value="tomato_4">Tomato4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td>
+                    <input type="checkbox" name="extra_cheese" id="extra_cheese">Extra Cheese
+                    <input type="checkbox" name="gluten_free_base" id="gluten_free_base">Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Delivery Instructions<br>
+                    <textarea name="text" id="textArea" cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Send my Order"></td>
+            </tr>
+        </TABLE>
+    </FORM>
+</body>
+</html>
