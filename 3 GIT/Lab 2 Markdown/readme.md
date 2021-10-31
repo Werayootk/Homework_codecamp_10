@@ -11,5 +11,5 @@ Lab Markdown
 - สร้าง link
 - สร้าง list
 - สร้าง ตัวหนา ตัวเอียง
-- สร้าง <hr>
+- สร้าง `<hr>`
 - สร้าง blockquotes
