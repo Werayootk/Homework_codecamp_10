@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook HomeWork3</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+      }
+      header {
+        background-color: #f1f2f6;
+        color: #f1f2f6;
+        height: 10vh;
+      }
+      main {
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      main > * {
+        flex: 1;
+      }
+      .main-l,
+      .main-r {
+        background-color: #f1f2f6;
+        color: #f1f2f6;
+        text-align: center;
+        flex-basis: 100px;
+      }
+      .main-c {
+        background-color: #f1f2f6;
+        flex: 5 500px;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      .main-c > * {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        margin: 30px 50px;
+        align-items: center;
+      }
+      .box1 {
+        position: relative;
+        top: 10vh;
+        width: 480px;
+        height: 150px;
+        display: block;
+        text-align: left;
+        padding: 10px;
+      }
+      #word1 {
+        font-size: 50px;
+        font-weight: 600;
+        color: #177efc;
+      }
+      #word2 {
+        font-size: 20px;
+      }
+      .box2big {
+        width: 396px;
+        height: 456px;
+        display: block;
+        position: relative;
+        top: 10vh;
+      }
+      .box2big > span {
+        position: relative;
+        top: 20px;
+      }
+      .box2small {
+        background-color: #ffffff;
+        border-radius: 5px;
+        width: 100%;
+        height: 80%;
+        display: block;
+        padding: 20px;
+      }
+      #username,
+      #password {
+        width: 350px;
+        height: 50px;
+        padding: 10px 8px;
+        font-size: 16px;
+        border-color: rgb(172, 172, 172);
+        border-width: 1px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      #button1 {
+        background-color: #1977f3;
+        color: white;
+        width: 100%;
+        height: 50px;
+        padding: 14px 0;
+        margin: 10px 0;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      #button1:hover {
+        background-color: #046df7;
+        cursor: pointer;
+      }
+      #button2 {
+        background-color: #50c738;
+        color: white;
+        width: 70%;
+        height: 50px;
+        padding: 14px 0;
+        margin: 10px 0;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+      }
+      #button2:hover {
+        background-color: #32a51b;
+        cursor: pointer;
+      }
+      #link1 {
+        color: #2995fa;
+        text-decoration: none;
+      }
+      #link1:hover {
+        color: #2995fa;
+        text-decoration: underline;
+      }
+      #link1:visited {
+        text-decoration: none;
+      }
+      footer {
+        background-color: #ffffff;
+        color: #ffffff;
+        height: 10vh;
+      }
+      .bottom-box{
+            padding-top: 20px;
+            background-color: white;
+        }
+        #pageFooter{
+            margin: 0 auto;
+            width: 980px;  
+        }
+        .language{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            flex-flow: wrap;
+            padding-top: 8px;
+            list-style: none;
+            font-size: 15px; 
+        }
+        .language > li {
+            padding-right: 0;
+            padding-left:10px;
+        }
+        li > a{
+            color: #737373;
+            text-decoration: none;
+        }
+
+        li:hover{
+            text-decoration: underline;
+        }
+
+        .line2{
+            border-bottom:2px solid #dddfe2;
+            font-size:3px;
+            height:8px;
+            margin-bottom:8px;
+        }
+        
+        .etc {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            flex-flow: wrap;
+            padding-top: 5px;
+            list-style: none;
+            font-size: 14px;
+            margin-left: -12px;
+            line-height: 1.6;
+            
+        }
+        .etc > li {
+            padding-right: 0;
+            padding-left:20px;
+        }
+
+        .copyright{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left:8px;
+            font-size: 13px;
+            color: #737373;
+        }
+
+      @media (max-width: 1500px) {
+        .main-c {
+          margin: 0px;
+        }
+        .box1 {
+          position: absolute;
+          text-align: center;
+          margin: -20px;
+        }
+        .box2 {
+          position: absolute;
+        }
+        #pageFooter{
+                margin: 0 auto;
+                width: auto;
+            }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Header</h1>
+    </header>
+    <main>
+      <div class="main-l"></div>
+
+      <div class="main-c">
+        <div class="box1">
+          <div><span id="word1">facebook</span></div>
+          <br />
+          <div>
+            <span id="word2"
+              >Facebook helps you connect and share with the people in your
+              life.</span
+            >
+          </div>
+        </div>
+
+        <div class="box2big">
+          <div class="box2small">
+            <div class="form1">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Email or Phone Number"
+              /><br />
+            </div>
+            <div class="form2">
+              <input
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Password"
+              /><br />
+            </div>
+            <button type="submit" id="button1" href="#">
+              <strong>Log In</strong>
+            </button>
+            <div style="margin: 10px">
+              <a id="link1" href="#">Forget Password?</a>
+            </div>
+            <hr />
+            <div class="signinbutton"></div>
+            <button type="submit" id="button2" href="#">
+              <strong>Create New Account</strong>
+            </button>
+          </div>
+          <span><b>Create a Page</b> for a celebrity. band or business</span>
+        </div>
+      </div>
+      <div class="main-r"></div>
+    </main>
+    <footer>
+    <div class="bottom-box">
+        <div id="pageFooter">
+            <ul class="language">
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">English (UK)</a></li>
+                <li><a href="#">日本語</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Italiano</a></li>
+            </ul>
+            <div class="line2"></div>
+            <ul class="etc">
+                <li><a href="#">สมัคร</a></li>
+                <li><a href="#">เข้าสู่ระบบ</a></li>
+                <li><a href="#" >Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#"> Watch </a></li>
+                <li><a href="#" >ผู้คน</a></li>
+                <li><a href="#">เพจ</a></li>
+                <li><a href="#">หมวดหมู่เพจ</a></li>
+                <li><a href="#">สถานที่</a></li>
+                <li><a href="#">เกม</a></li>
+                <li><a href="#" >ตำแหน่งที่ตั้ง</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#" >Facebook Pay</a></li>
+                <li><a href="#" >กลุ่ม</a></li>
+                <li><a href="#" >งาน</a></li>
+                <li><a href="#" >Oculus</a></li>
+                <li><a href="#" >Portal</a></li>
+                <li><a href="#" >ในพื้นที่</a></li>
+                <li><a href="#" >โครงการระดมทุน</a></li>
+                <li><a href="#" >บริการ</a></li>
+                <li><a href="#" >ศูนย์ข้อมูลการลงคะแนนเสียง</a></li>
+                <li><a href="#" >เกี่ยวกับ</a></li>
+                <li><a href="#" >สร้างโฆษณา</a></li>
+                <li><a href="#" >สร้างเพจ</a></li>
+                <li><a href="#" >ผู้พัฒนา</a></li>
+                <li><a href="#" >ร่วมงานกับ Facebook</a></li>
+                <li><a href="#" >ความเป็นส่วนตัว</a></li>
+                <li><a href="#" >คุกกี้</a></li>
+                <li><a href="#" >ตัวเลือกโฆษณา</a></li>
+                <li><a href="#" >เงื่อนไข</a></li>
+                <li><a href="#" >ความช่วยเหลือ</a></li>
+            </ul>
+            <div class="copyright">
+                <span> Facebook © 2021</span> 
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
