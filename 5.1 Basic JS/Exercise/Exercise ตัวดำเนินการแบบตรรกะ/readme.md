@@ -5,17 +5,21 @@
 Exercise ตัวดำเนินการแบบตรรกะ
 
 1. คำสั่งต่อไปนี้จะแสดงค่าเป็นอะไร
+```
 alert( null || 2 || undefined );
 alert( alert(1) || 2 || alert(3) );
 alert( 1 && null && 2 );
 alert( alert(1) && alert(2) );
 alert( null || 2 && 3 || 4 );
+```
 2. เขียนคำสั่ง if ที่เช็คอายุว่าอยู่ระหว่าง 18 - 60
 3. เขียนคำสั่ง if ที่เช็คอายุว่าไม่อยู่ระหว่าง 18 - 60
 4. คำสั่ง alert ไหนที่จะถูกรันบ้าง
+```
 if (-1 || 0) alert( 'first' );
 if (-1 && 0) alert( 'second' );
 if (null || -1 && 0) alert( 'third' );
+```
 5. ให้เขียนระบบ login
     - ให้ใช้ prompt ในการถามใครเป็นคน login
     - ถ้าผู้ใช้กรอกว่า “Admin” ให้ใช้ prompt ถาม password
