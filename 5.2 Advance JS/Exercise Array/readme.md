@@ -5,6 +5,14 @@
 Exercise Array
 
 1. ผลลัพธ์ของความยาว array คืออะไร
+```
+let fruits = ["Apples", "Pear", "Orange"];
+
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+alert( fruits.length ); // ?
+```
 2. ให้ทำตามขั้นตอนต่อไปนี้
     - สร้าง array ชื่อ styles ที่มี items ชื่อ “Jazz” และ “Blues”
     - เพิ่ม “Rock-n-Roll” ต่อท้าย
