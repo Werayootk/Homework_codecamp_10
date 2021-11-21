@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+node_modules/
 /React.js/Basic React/Homework1/homework/node_modules
 /React.js/Basic React/Homework2/homework/node_modules
 
